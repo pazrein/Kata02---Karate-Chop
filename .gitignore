@@ -1,2 +1,5 @@
 *.iml
 *.idea
+*compiler.xml
+*misc.xml
+*workspace.xml
