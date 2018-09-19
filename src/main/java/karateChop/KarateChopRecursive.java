@@ -1,6 +1,8 @@
+package karateChop;
+
 import java.util.ArrayList;
 
-public class KarateChop {
+public class KarateChopRecursive implements KarateChop {
     public int chop(int i, ArrayList<Integer> list) {
         return chopRecursive(i, list, 0, list.size() - 1);
     }
