@@ -23,7 +23,7 @@ class KarateChopTest {
     @ParameterizedTest
     @MethodSource("karateChopStream")
     void chop_emptyArray_chopAllTheOptions(KarateChop karateChop) {
-        assertEquals(-1, karateChop.chop(1, new ArrayList<Integer>()));
+        assertEquals(-1, karateChop.chop(1, Lists.newArrayList()));
     }
 
     @ParameterizedTest
