@@ -6,7 +6,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.util.ArrayList;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +16,7 @@ class KarateChopTest {
     private final KarateChop karateChop = new KarateChopRecursive();
 
     public static Stream<KarateChop> karateChopStream() {
-        return Stream.of(new KarateChopRecursive());
+        return Stream.of(new KarateChopRecursive(), new KarateChopIterative());
     }
 
 
